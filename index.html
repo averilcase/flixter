@@ -5,6 +5,7 @@
 		<title>Flixter</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<style type="text/css">
+		body{margin:0; padding: 0;}
 		@media only screen and (max-width: 660px){
 			table.container {width: 480px!important; }
 			td.logo img {display: none;}
@@ -15,6 +16,23 @@
 			td.banner {width: 480px; height: 150px; background: url(img/medium-hero.jpg) no-repeat 0px 0px; }
 			td.content table.button {width: auto;}
 			td.content table.button td a {font-size: 14px !important;}
+			td.promos table {width:200px!important;}
+			td.promos table td h3 {margin-bottom: 8px; padding-top: 10px;}
+			td.promos table td img {display: none;}
+			td.promos table.promo_1 td { background: url(img/thumb1_medium.jpg) no-repeat 0px 0px; 
+				padding: 100px 0px 0px 0px;}
+			td.promos table.promo_2 td {background: url(img/thumb2_medium.jpg) no-repeat 0px 0px; 
+				padding: 100px 0px 0px 0px;}
+			td.callout table {width: 50% !important; margin-bottom: 40px;}
+			td.callout table img {display: none;}
+			td.callout table br{display: none}
+			td.callout table a {display: block; margin-top: 10px;}
+			td.callout table td {background-size: 65px 65px;}
+			td.callout table.callout_1 td {padding: 0px 30px 0px 60px !important; background: url(img/camera.jpg) no-repeat 0px -5px;}
+			td.callout table.callout_2 td {padding: 0px 20px 0px 60px !important; background: url(img/flash.jpg) no-repeat 10px 0px;}
+			td.callout table.callout_3 td {padding: 0px 30px 0px 60px!important; background: url(img/film.jpg) no-repeat 0px -5px; clear: left;}
+			td.callout table.callout_4 td {padding: 0px 20px 0px 60px !important; background: url(img/battery.jpg) no-repeat 0px -13px;}
+
 		}
 		@media only screen and (max-width: 510px){ 
 			table.container{width: 100% !important;}
@@ -23,6 +41,22 @@
 			td.headline h1 {font-size: 24px !important; text-align:center;}
 			td.banner {max-width: 100%; background: url(img/small-hero.jpg) no-repeat right 0px; }
 			td.footer {padding:20px 30px !important;}
+			td.promos table.promo_1 {width: 100% !important; border-top: 1px solid #222;}
+			td.promos table.promo_1 td { background: url(img/thumb1_small.jpg) no-repeat 0px 40px; 
+				padding: 20px 0px 40px 110px;}
+			td.promos table.promo_2 {width: 100% !important;} 
+			td.promos table.promo_2 td {background: url(img/thumb2_small.jpg) no-repeat 0px 20px; 
+				padding: 0px 0px 0px 110px; clear: left;}
+			td.promos table td h3 {margin-bottom: 8px; padding-top: 0px;}
+			td.callout {padding: 20px 20px 0px 30px !important}
+			td.callout table {width: 100%!important; margin-bottom: 20px;}
+			td.callout table td {padding: 0px 0px 0px 50px !important;background-size: 40px 40px !important; min-height: 60px;}
+			td.callout table a {display: inline;}
+			td.callout table.callout_1 td {background-position: 0px -2px;}
+			td.callout table.callout_2 td {background-position: 4px -2px;}
+			td.callout table.callout_3 td {background-position: 0px -2px;}
+			td.callout table.callout_4 td {background-position: 4px -8px;}
+			td.callout table br.spacer {display: inline;}
  		 }
 
 
@@ -30,6 +64,10 @@
 
 	</head>
 	<body bgcolor="#f8f8f8">
+
+		<div style="font-size:1px; color:#f8f8f8; display: none;">
+			Place your preview message text here. This will show in most email clients as the preview text in the inbox. Also, make sure it is long enough to take up all of the space availble by your chosen clients.
+		</div>
 	
 		<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f8f8f8">
 			<tr>
@@ -47,7 +85,7 @@
 						</tr>
 						<tr>
 							<td valign="top" bgcolor="#ffffff" class="banner" style="border-left: 1px solid #222; border-right: 1px solid #222;">
-							<img src="img/hero.jpg" width="638px" height="250px">
+							<img src="img/hero.jpg" width="638px" height="250px" alt="Retro camera">
 							</td>
 						</tr>
 						<tr>
@@ -73,7 +111,7 @@
 								<table class="promo_1" width="270" align="left">
 									<tr>
 										<td>
-											<img class="promo" alt="Promo image 1" src="img/thumb1.jpg">
+											<img class="promos" alt="Promo image 1" src="img/thumb1.jpg">
 												<h3 style="font-size:16px;">Promo heading here</h3>
 												Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore magna aliqua elit sed do eiusmod.
 												<br><br>
@@ -101,9 +139,10 @@
 								<table class="callout_1" width="135" align="left" border="0" cellspacing="0" cellpadding="0">
 									<tr>
 										<td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 16px; color: #222;">
-											<i width="75" height="75" class="fa fa-film fa-3x"></i><br>
+											<img src="img/camera.jpg" width="55px" alt="Camera icon">
+											<br>
 											Lorem ipsum dolor sit amet conctetur adipi eiu smod incid amet idun.
-											<br><br>
+											<br><br class="spacer">
 											<a style="color:#636363;" href="#">Learn more</a>
 										</td>
 									</tr>
@@ -111,9 +150,10 @@
 								<table class="callout_2" width="135" align="left" border="0" cellspacing="0" cellpadding="0">
 									<tr>
 										<td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 16px; color: #222;">
-											<i class="fa fa-bolt fa-3x"></i><br/>
+											<img src="img/flash.jpg" width="55px" alt="Flash icon">
+											<br>
 											Ddolore eu fugiat nulla pariatur cupi datat excepteur occaet cupi noin.
-											<br><br>
+											<br><br class="spacer">
 											<a style="color:#636363;" href="#">Learn more</a>
 										</td>
 									</tr>
@@ -122,9 +162,10 @@
 								<table class="callout_3" width="135" align="left" border="0" cellspacing="0" cellpadding="0">
 									<tr>
 										<td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px; color: #222;">
-											<i class="fa fa-camera-retro fa-3x"></i><br>
+											<img src="img/film.jpg" width="55px" alt="Film icon">
+											<br>
 											Eiusmod tempor inci didunt ut magna aliqua ut enim ad iam quis.
-											<br><br>
+											<br><br class="spacer">
 											<a style="color:#636363;" href="#">Learn more</a>
 										</td>
 									</tr>
@@ -133,15 +174,16 @@
 								<table class="callout_4" width="135" align="left" border="0" cellspacing="0" cellpadding="0">
 									<tr>
 										<td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px; color: #222;">
-											<i class="fa fa-battery-full fa-3x"></i><br>
+											<img src="img/battery.jpg" width="55px" alt="Battery icon">
+											<br>
 											Excepteur sint occaecat cupidatat non proident sunt in culpa qui molit.
-											<br><br>
+											<br><br class="spacer">
 											<a style="color:#636363;" href="#">Learn more</a>
 										</td>
 									</tr>
 								</table>
 
-								<br style="clear:both"/>
+								<br style="clear:both">
 
 							</td>
 						</tr>
@@ -163,26 +205,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-	<!-- 	<i class="fa fa-film fa-3x"></i>
-	<i class="fa fa-bolt"></i>
-	<i class="fa fa-camera-retro fa-3x"></i>
-<i class="fa fa-battery-full fa-3x"></i>
-
-
-
-
-
-	 -->
 
 	</body>
 </html>
